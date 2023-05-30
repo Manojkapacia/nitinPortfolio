@@ -1,0 +1,45 @@
+/* .container {
+  background: url('../../../assets/logoImage/port6.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+} */
+
+#sect1 {
+  height: 100vh;
+  color: #fff;background : url("/assets/logoImage/hero-bg.jpg");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  /* background-size: auto; */
+  /* -webkit-background-size: cover; */
+  /* -moz-background-size: cover; */
+  /* background-size: cover; */
+  /* -o-background-size: cover; */
+  /* opacity: .5; */
+}
+
+@media only screen and (max-width: 992px) {
+  .textCenter {
+    text-align: center;
+  }
+}
+
+a i {
+  transition: all 0.3s linear;
+}
+a:hover i {
+  transform: scale(1.5);
+}
+.twitter, .instagram,.google-plus,.linkedin {
+  color: #45505b;
+  font-size: 1.8rem;
+}
+
+.twitter:hover, .instagram:hover,.google-plus:hover,.linkedin:hover {
+  color: #0563bb;
+}
+

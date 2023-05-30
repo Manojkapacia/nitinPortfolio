@@ -1,0 +1,100 @@
+.contactHeading{
+  color: #45505b;
+  font-family: Raleway,sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+
+/* .testimotionals {
+  width:350px;
+   display:inline-block;
+    margin-left:50px;
+    margin-top:50px
+
+  } */
+
+
+  .card .testimotionals{
+
+    position:relative;
+    overflow:hidden;
+    /* width:350px; */
+    /* margin:0 auto; */
+    /* background:#333; */
+    background-color: #fff;
+    /* padding:20px; */
+    box-sizing:border-box;
+    text-align:center;
+    box-shadow:0 5px 5px rgba(0,0,0,.5);
+    height: 22rem;
+  }
+  .card .testimotionals  .layer {
+    z-index:1;
+    position:absolute;
+    top:calc(100% - 2px);
+    height:100%;
+    width:100%;
+    left:0;
+    background:linear-gradient(to left , #0563bb, #b0c4e2);
+    transition:0.5s;
+
+  }
+
+  .card .testimotionals .content {
+    z-index:2;
+    position:relative;
+  }
+
+  .card .testimotionals:hover  .layer{
+    top:0;
+  }
+
+
+
+ .card .testimotionals .addCSS img {
+    opacity: 0.7;
+    /* transition: opacity .2s; */
+    z-index:2;
+    position:relative;
+  }
+
+  .card .testimotionals:hover .addCSS  img{
+    opacity: 1;
+  }
+
+  .card .testimotionals .addCSS h4{
+    z-index:2;
+    position:relative;
+    /* text-decoration: underline; */
+    cursor: pointer;
+    color: #45505b;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: Raleway,sans-serif
+  }
+
+  .card .testimotionals:hover .addCSS h4{
+    color: #fff;
+  }
+
+  .card .testimotionals .addCSS p{
+    z-index:2;
+    position:relative;
+    font-size: 1rem;
+    font-family: Raleway,sans-serif
+  }
+
+
+  ::ng-deep .owl-carousel .owl-item img{
+    display:inline;
+     width: 7rem;
+     height: 7rem;
+     /* margin-left: 90vh; */
+  }
+
+
+
+
+

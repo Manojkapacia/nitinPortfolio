@@ -1,0 +1,91 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 7vw;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="d-flex flex-column vh-100">
+      <div class="d-flex flex-grow-1 align-items-center">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+          <ul class="navbar-nav">
+            <li class="nav-item d-flex homeIcon">
+              <a>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item my-2">
+              <a>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li class="nav-item my-2">
+              <a>
+                <i class="fa fa-file" aria-hidden="true"></i>
+                <span>Resume</span>
+              </a>
+            </li>
+            <li class="nav-item my-2">
+              <a>
+                <i class="fa fa-th-large" aria-hidden="true"></i>
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li class="nav-item my-2">
+              <a>
+                <i class="fa fa-server" aria-hidden="true"></i>
+                <span>Services</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav> -->
+
+<i class="fa mobile-nav-toggle d-xl-none" [ngClass]="!isActive ? 'fa-bars' : 'fa-times'" (click)="toggleClass()"></i>
+<header id="header" class="d-flex flex-column justify-content-center">
+  <nav id="navbar" class="navbar nav-menu">
+    <ul>
+      <li (click)="toggleActiveNav('1')">
+        <a href="#home" class="nav-link scrollto" [ngClass]="activeNav  == '1' ? 'active' : ''">
+          <i class="fa fa-home"></i> <span>Home</span>
+        </a>
+      </li>
+      <li (click)="toggleActiveNav('2')">
+        <a href="#about" class="nav-link scrollto" [ngClass]="activeNav  == '2' ? 'active' : ''">
+          <i class="fa fa-user"></i> <span>About</span>
+        </a>
+      </li>
+      <li (click)="toggleActiveNav('3')">
+        <a href="#resume" class="nav-link scrollto" [ngClass]="activeNav  == '3' ? 'active' : ''">
+          <i class="fa fa-file-text"></i> <span>Resume</span>
+        </a>
+      </li>
+      <li (click)="toggleActiveNav('4')">
+        <a href="#portfolio" class="nav-link scrollto" [ngClass]="activeNav  == '4' ? 'active' : ''">
+          <i class="fa fa-book"></i> <span>Portfolio</span>
+        </a>
+      </li>
+      <li (click)="toggleActiveNav('5')">
+        <a href="#services" class="nav-link scrollto" [ngClass]="activeNav  == '5' ? 'active' : ''">
+          <i class="fa fa-support"></i> <span>Services</span>
+        </a>
+      </li>
+      <li (click)="toggleActiveNav('6')">
+        <a href=" #contact" class="nav-link scrollto" [ngClass]="activeNav  == '6' ? 'active' : ''">
+          <i class="fa fa-headphones"></i> <span>Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
