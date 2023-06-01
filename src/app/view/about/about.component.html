@@ -148,4 +148,21 @@
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-md-11 offset-md-1 pe-0.5 pe-md-5 ps-0.5 ps-md-5">
+        <div class="row">
+          <div class="col-md-6">
+            <canvas baseChart [data]="salesData" [type]="'bar'"
+              [options]="chartOptions">
+            </canvas>
+          </div>
+          <div class="col-md-6">
+            <canvas baseChart [data]="salesData" [type]="'line'"
+              [options]="chartOptions">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>

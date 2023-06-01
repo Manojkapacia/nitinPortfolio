@@ -16,6 +16,7 @@ import { ProgressbarModule,ProgressbarConfig } from 'ngx-bootstrap/progressbar';
 import { HomeComponent } from './view/home/home.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { CountUpDirective } from './count-up.directive';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CountUpDirective } from './count-up.directive';
     CarouselModule,
     BrowserAnimationsModule,
     ProgressbarModule,
-    NgxTypedJsModule
+    NgxTypedJsModule,
+    NgChartsModule
   ],
   providers: [
     ProgressbarConfig

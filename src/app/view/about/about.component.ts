@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+import { ChartData, ChartOptions } from 'chart.js';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -41,5 +42,43 @@ export class AboutComponent implements OnInit {
       delay: 150,
     });
   }
+
+  salesData: ChartData<'line'> = {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+    datasets: [
+      { label: 'Mobiles', data: [1000, 1200, 1050, 2000, 500],backgroundColor:
+        ('rgb(255, 128, 0)'),borderColor:('rgb(153, 76, 0)'),hoverBackgroundColor:('rgb(153, 76, 0)'),
+        borderWidth:2,hoverBorderColor:('rgb(153, 76, 0)'),tension: 0.5 },
+      { label: 'Laptop', data: [200, 100, 400, 50, 90],backgroundColor:
+        ('rgb(255, 255, 0)'),borderColor:('rgb(153, 153, 0)'),hoverBackgroundColor:('rgb(153, 153, 0)'),
+        borderWidth:2,hoverBorderColor:('rgb(153, 153, 0)'),tension: 0.5 },
+      { label: 'AC', data: [500, 400, 350, 450, 650],backgroundColor: 
+        ('rgb(128, 255, 0)'),borderColor:('rgb(0, 153, 0)'),hoverBackgroundColor:('rgb(0, 153, 0)'),
+        borderWidth:2,hoverBorderColor:('rgb(0, 153, 0)'),tension: 0.5 },
+      { label: 'Headset', data: [1200, 1500, 1020, 1600, 900],backgroundColor:('rgb(0, 255, 255)'),
+        borderColor:('rgb(0, 153, 153)'),hoverBackgroundColor:('rgb(0, 153, 153)'),
+        borderWidth:2,hoverBorderColor:('rgb(0, 153, 153)'),tension: 0.5 },
+    ],
+  };
+
+  chartOptions: ChartOptions = {
+    responsive: true,
+  
+    plugins: {
+      tooltip:{
+        displayColors: false,
+        callbacks:{
+          labelTextColor(tooltipItem) {
+            // console.log("tooltip",tooltipItem,tooltipItem.dataset.borderColor);
+            return 'rgb(255, 128, 0)'
+          }
+        }
+      },
+      title: {
+        display: true,
+        text: 'Monthly Sales Data',
+      },
+    },
+  };
 
 }
