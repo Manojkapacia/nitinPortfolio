@@ -17,6 +17,7 @@ import { HomeComponent } from './view/home/home.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { CountUpDirective } from './count-up.directive';
 import { NgChartsModule } from 'ng2-charts';
+import { CKEditorModule } from 'ckeditor4-angular';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { NgChartsModule } from 'ng2-charts';
     BrowserAnimationsModule,
     ProgressbarModule,
     NgxTypedJsModule,
-    NgChartsModule
+    NgChartsModule,
+    CKEditorModule
   ],
   providers: [
     ProgressbarConfig
